@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuando tu nombre habla, el mundo escucha</title>
+  
+  <!-- Meta tags para WhatsApp / Open Graph -->
+  <meta property="og:title" content="Cuando tu nombre habla, el mundo escucha" />
+  <meta property="og:description" content="Cuando tu nombre habla, el mundo escucha" />
+  <meta property="og:image" content="https://rafadzrmz.github.io/IA-SAIRA/SAIRA.jpg" />
+  <meta property="og:url" content="https://rafadzrmz.github.io/IA-SAIRA/index.html" />
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #000000;
+      z-index: 9999;
+
+      /* Texto */
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      color: #ffffff !important;
+      font-size: 18px !important;
+      font-weight: bold !important;
+      font-family: Arial, sans-serif !important;
+      text-align: center !important;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+
+      /* Escalado */
+      transform: scale(1.15);
+      transform-origin: top center;
+    }
+
+    /* Solo para desktop */
+    @media (min-width: 768px) {
+      .overlay {
+        position: fixed;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="overlay">Cuando tu nombre habla, el mundo escucha</div>
+
+    <iframe
+      src="https://rafadzrmz.wixsite.com/website"
+      sandbox
+    ></iframe>
+  </div>
+</body>
+</html>

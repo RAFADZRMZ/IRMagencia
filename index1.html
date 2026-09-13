@@ -283,7 +283,7 @@
       <span>Enviar WhatsApp</span>
     </a>
 
-    <a class="contact-item" href="#" onclick="guardarContacto(event)">
+    <a class="contact-item" href="Itzel_Ramirez_Mujica.vcf">
       <div class="contact-icon">
         <svg viewBox="0 0 24 24">
           <circle cx="9" cy="8" r="3"/>
@@ -330,44 +330,6 @@
     <img class="qr-code" src="assets/qr.png" alt="Código QR">
     <div class="scan-me">SCAN ME</div>
   </section>
-
-  <script>
-    function guardarContacto(event) {
-      event.preventDefault();
-
-      const vcard = [
-        "BEGIN:VCARD",
-        "VERSION:3.0",
-        "FN:Lic. Itzel Ramírez Mujica",
-        "N:Ramírez Mujica;Itzel;;;",
-        "TITLE:Directora Comercial",
-        "ORG:AGENCIA DE MARKETING & RELACIONES PÚBLICAS",
-        "EMAIL:irmagenciaderelacionespublicas@gmail.com",
-        "TEL;TYPE=CELL:+524731190061",
-        "URL:https://www.instagram.com/TU_USUARIO",
-        "END:VCARD"
-      ].join("\r\n");
-
-      const blob = new Blob([vcard], {
-        type: "text/vcard;charset=utf-8"
-      });
-
-      const url = URL.createObjectURL(blob);
-
-      const link = document.createElement("a");
-      link.href = url;
-      link.target = "_blank";
-      link.rel = "noopener";
-
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-
-      setTimeout(() => {
-        URL.revokeObjectURL(url);
-      }, 1000);
-    }
-  </script>
 
 </body>
 </html>
